@@ -14,27 +14,62 @@ O objetivo principal deste projeto é desenvolver um software abrangente voltado
 
 - **Testes Exaustivos:** Realizar testes abrangentes do software em diversos cenários de uso, garantindo a eficiência, confiabilidade e desempenho em situações variadas.
 
-## Como Contribuir
+## Metodologia de Desenvolvimento
 
-Se você deseja contribuir para o desenvolvimento deste projeto, você pode seguir estas etapas:
+A metodologia proposta para o desenvolvimento deste trabalho busca estabelecer uma abordagem cuidadosa para a implementação do software de monitoramento e análise de dados de sinais médicos. A fim de garantir o seu funcionamento ideal, serão considerados elementos como a escolha da linguagem de programação, a requisição dos dados da nuvem, a alta latência de dados e a transmissão eficiente dos dados entre o dispositivo de captura e o sistema de monitoramento.
 
-1. Faça um fork deste repositório.
+### Escolha da Linguagem de Programação
 
-2. Clone o fork para o seu ambiente local.
+Pretende-se optar pela linguagem C, reconhecida por sua eficiência e desempenho. Acredita-se que a utilização dessa linguagem permitirá a criação de um código otimizado e de execução rápida, aspectos essenciais para o processamento e análise em tempo real dos sinais médicos capturados. Serão realizados testes e avaliações de desempenho para confirmar a adequação dessa linguagem ao propósito do software.
 
-3. Implemente suas melhorias ou correções.
+### Integração com a Nuvem
 
-4. Certifique-se de incluir testes relevantes.
+Será realizada uma análise cuidadosa para identificar e selecionar um serviço de armazenamento em nuvem que atenda às necessidades específicas do projeto. A escolha de um provedor de nuvem confiável e adequado é essencial para garantir a segurança, disponibilidade e escalabilidade dos dados de sinais médicos.
 
-5. Envie um pull request detalhando suas alterações.
+### Minimização da Latência de Dados
 
-## Licença
+Será fundamental adotar estratégias de otimização de código e utilização de estruturas de dados eficientes para lidar com a alta latência de dados durante a transmissão e o processamento em tempo real. A implementação de um sistema de trabalho assíncrono será explorada para processar várias tarefas simultaneamente, resultando em maior eficiência e resposta mais rápida às demandas de processamento.
 
-Este projeto é distribuído sob a [licença MIT](https://opensource.org/licenses/MIT). Sinta-se à vontade para usar, modificar e distribuir o software de acordo com os termos da licença.
+### Validação de Dados
 
-## Contato
+A validação dos dados lidos e entregues será realizada para evitar perdas no tratamento. A validação dos dados é crucial para garantir a integridade das informações recebidas do dispositivo de captura e verificar se os dados processados e enviados para o sistema de monitoramento remoto foram transmitidos com sucesso e sem corrupção.
 
-Se você tiver alguma dúvida, sugestão ou feedback, sinta-se à vontade para entrar em contato através das issues do repositório. Estamos entusiasmados com a colaboração e ansiosos para tornar este projeto o melhor possível para aqueles em situações de isolamento médico.
+### Transmissão Eficiente dos Dados
+
+Protocolos de comunicação adequados serão implementados para garantir uma transmissão eficiente dos dados entre o dispositivo de captura e o sistema de monitoramento. Será realizada uma pesquisa detalhada para identificar os protocolos mais adequados, levando em consideração aspectos como segurança, confiabilidade e eficiência na transmissão de dados.
+
+## Cronograma (Agosto - Dezembro)
+
+| Mês       | Atividades                                     |
+|-----------|------------------------------------------------|
+| Agosto    | - Definição dos objetivos do projeto.          |
+|           | - Pesquisa sobre linguagem de programação C.   |
+|           | - Início do design da interface de usuário.    |
+| Setembro  | - Escolha final da linguagem de programação.   |
+|           | - Continuação do design da interface.         |
+|           | - Pesquisa e seleção do serviço de nuvem.     |
+| Outubro   | - Implementação da estrutura básica do software. |
+|           | - Desenvolvimento dos algoritmos de processamento. |
+|           | - Integração com o serviço de armazenamento em nuvem. |
+| Novembro  | - Implementação dos recursos de notificação e alerta. |
+|           | - Testes iniciais de funcionamento e desempenho. |
+|           | - Implementação de estratégias de otimização de código. |
+| Dezembro  | - Realização de testes extensivos em cenários diversos. |
+|           | - Refinamento da interface de usuário.         |
+|           | - Documentação do projeto e preparação para lançamento. |
+
+## Custos Potenciais
+
+Embora a mão de obra seja gratuita, é importante considerar alguns custos técnicos associados ao projeto:
+
+| Despesa                   | Detalhes                           |
+|--------------------------|-----------------------------------|
+| Hospedagem em Nuvem      | Capacidade, transferência de dados, serviços adicionais. |
+| Licenças de Software     | Ferramentas ou bibliotecas pagas utilizadas no desenvolvimento. |
+| Equipamentos e Hardware  | Dispositivos de captura de dados, equipamentos específicos. |
+| Testes e Validação       | Recursos de testes, simulações, equipamentos de testes. |
+| Serviços de Terceiros    | Consultoria, design, outros serviços especializados. |
+| Marketing e Divulgação   | Criação de materiais de marketing, promoção. |
 
 ---
 
