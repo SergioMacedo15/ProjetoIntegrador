@@ -47,6 +47,43 @@ Certifique-se de configurar o ambiente e as variáveis de ambiente necessárias 
 
 A estrutura do projeto facilita a manutenção e escalabilidade, com os controladores (controllers) responsáveis por manipular as requisições, os modelos (models) definindo a estrutura dos dados no MongoDB, as rotas (routes) gerenciando o fluxo da aplicação, configurações específicas no diretório config, e middlewares personalizados no diretório middleware. O arquivo server.js atua como ponto de entrada da aplicação.
 
+#### Dependências do Backend:
+
+- [bcrypt](https://www.npmjs.com/package/bcrypt): ^5.1.1
+  - **Propósito:** Utilizado para criptografia de senhas.
+  - **Justificativa:** A criptografia de senhas é essencial para garantir a segurança das credenciais dos usuários armazenadas no banco de dados.
+
+- [body-parser](https://www.npmjs.com/package/body-parser): ^1.20.2
+  - **Propósito:** Analisa o corpo das requisições HTTP.
+  - **Justificativa:** Facilita a extração de dados do corpo das requisições, tornando o manuseio de dados mais eficiente.
+
+- [express](https://www.npmjs.com/package/express): ^4.18.2
+  - **Propósito:** Framework web para Node.js.
+  - **Justificativa:** Simplifica o desenvolvimento de aplicativos web e APIs, proporcionando uma estrutura robusta e flexível.
+
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken): ^9.0.2
+  - **Propósito:** Geração e verificação de tokens de autenticação.
+  - **Justificativa:** Essencial para implementar a autenticação baseada em tokens, garantindo a segurança das comunicações.
+
+- [mongodb](https://www.npmjs.com/package/mongodb): ^6.3.0
+  - **Propósito:** Driver oficial do MongoDB para Node.js.
+  - **Justificativa:** Possibilita a interação eficiente com o banco de dados MongoDB, utilizado para armazenar dados da aplicação.
+
+- [mongoose](https://www.npmjs.com/package/mongoose): ^8.0.2
+  - **Propósito:** Modelagem de objetos MongoDB.
+  - **Justificativa:** Simplifica a interação com o MongoDB ao fornecer uma camada de abstração, permitindo a definição de modelos de dados de forma mais intuitiva.
+
+- [nodemon](https://www.npmjs.com/package/nodemon): ^3.0.2
+  - **Propósito:** Monitora alterações nos arquivos e reinicia automaticamente o servidor.
+  - **Justificativa:** Facilita o desenvolvimento, eliminando a necessidade de reinicialização manual do servidor a cada alteração no código.
+
+- [socket.io](https://www.npmjs.com/package/socket.io): ^4.7.2
+  - **Propósito:** Habilita comunicação em tempo real via WebSocket.
+  - **Justificativa:** Essencial para implementar funcionalidades de chat em tempo real, proporcionando uma experiência interativa aos usuários.
+
+- [uuid](https://www.npmjs.com/package/uuid): ^9.0.1
+  - **Propósito:** Geração de identificadores únicos.
+  - **Justificativa:** Utilizado para criar identificadores únicos, garantindo integridade e unicidade em diversos contextos da aplicação.
 
 ## Frontend
 No frontend, adotamos o [React](https://reactjs.org/) como nossa principal biblioteca. Além disso, incorporamos o [hookforms](https://react-hook-form.com/) para facilitar a manipulação de formulários. 
@@ -101,19 +138,43 @@ meu-projeto-react/
 
 No desenvolvimento do frontend, a ênfase foi dada à área de registro e visualização do cliente na página. Essa seção é crucial para a interação e experiência do usuário, e, portanto, as dependências foram cuidadosamente escolhidas para garantir eficiência e facilidade de uso nesse contexto específico.
 
-
 #### Dependências do Frontend:
-- [React](https://reactjs.org/): Biblioteca para construção de interfaces de usuário.
-- [hookforms](https://react-hook-form.com/): Facilita a criação e validação de formulários.
+
 - **[@fontsource/roboto](https://www.npmjs.com/package/@fontsource/roboto):** ^5.0.8
+  - **Propósito:** Fonte Roboto para estilização de texto.
+  - **Justificativa:** Adoção de uma fonte padrão que oferece legibilidade e aparência moderna aos elementos de texto na interface.
+
 - **[@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers):** ^3.3.2
+  - **Propósito:** Resolvedores para formulários React Hook.
+  - **Justificativa:** Facilita a validação e resolução de formulários, melhorando a experiência do usuário durante a interação com formulários.
+
 - **[next](https://www.npmjs.com/package/next):** 13.5.6
+  - **Propósito:** Framework React para renderização de páginas no lado do servidor (SSR).
+  - **Justificativa:** Oferece funcionalidades avançadas, como renderização no lado do servidor, e navegação de forma simplicada, facilitando a criação de aplicativos web eficientes.
+
 - **[react](https://www.npmjs.com/package/react):** ^18
+  - **Propósito:** Biblioteca JavaScript para construção de interfaces de usuário.
+  - **Justificativa:** Base fundamental para o desenvolvimento de componentes e interfaces interativas na aplicação.
+
 - **[react-bootstrap](https://www.npmjs.com/package/react-bootstrap):** ^2.9.1
+  - **Propósito:** Biblioteca de componentes Bootstrap para React.
+  - **Justificativa:** Facilita a criação de interfaces atraentes e responsivas com componentes pré-estilizados.
+
 - **[react-dom](https://www.npmjs.com/package/react-dom):** ^18
+  - **Propósito:** Pacote de renderização DOM para React.
+  - **Justificativa:** Necessário para a renderização de componentes React no navegador.
+
 - **[react-feather](https://www.npmjs.com/package/react-feather):** ^2.0.10
+  - **Propósito:** Ícones Feather como componentes React.
+  - **Justificativa:** Adição de ícones elegantes e leves para melhorar a estética e a usabilidade da interface.
+
 - **[react-hook-form](https://www.npmjs.com/package/react-hook-form):** ^7.47.0
+  - **Propósito:** Biblioteca para criação e gerenciamento de formulários React.
+  - **Justificativa:** Simplifica o processo de criação de formulários, tornando a coleta e validação de dados mais eficientes.
+
 - **[zod](https://www.npmjs.com/package/zod):** ^3.22.4
+  - **Propósito:** Validador de esquemas para JavaScript e TypeScript.
+  - **Justificativa:** Facilita a validação de dados, especialmente útil em conjunto com formulários para garantir a integridade dos dados submetidos.
 
 Essas dependências foram escolhidas para otimizar o desempenho, a usabilidade e a aparência da seção de registro e visualização do cliente, proporcionando uma experiência consistente e agradável aos usuários. Certifique-se de consultar a documentação de cada dependência para uma implementação eficaz e personalização conforme necessário.
 
@@ -172,3 +233,73 @@ meu-projeto-react-native/
 └── yarn.lock
 
 ```
+
+# APIs Utilizadas no Projeto
+
+## Parte Web
+
+### Google Maps API
+
+- **Objetivo:** A Google Maps API foi integrada para fornecer funcionalidades de mapa na parte web do projeto.
+  
+- **Recursos:**
+  - **Mapas Interativos:** Incorporação de mapas interativos para permitir aos usuários visualizar e interagir com diferentes localizações.
+  - **Marcadores e Informações:** Adição de marcadores e informações sobre pontos específicos no mapa para uma experiência mais rica.
+
+### Routes API
+
+- **Objetivo:** A API de rotas foi implementada para calcular e otimizar trajetos específicos na parte web.
+
+- **Recursos:**
+  - **Cálculo de Rotas:** Utilização de algoritmos avançados para calcular as melhores rotas entre pontos definidos, proporcionando uma navegação eficiente.
+
+### Location API
+
+- **Objetivo:** A API de Localização foi incorporada para fornecer funcionalidades relacionadas à posição geográfica na parte web.
+
+- **Recursos:**
+  - **Rastreamento de Localização:** Possibilidade de rastrear e exibir a localização atual do usuário.
+  - **Geocodificação e Reversão:** Conversão de endereços em coordenadas geográficas e vice-versa.
+
+## Parte Mobile (Expo Libraries e Redux)
+
+### Expo Permissions
+
+- **Objetivo:** A Expo Permissions foi utilizada para gerenciar e obter permissões do usuário no ambiente mobile.
+
+- **Recursos:**
+  - **Acesso à Localização:** Solicitação de permissões para acessar a localização do dispositivo, permitindo a funcionalidade de rastreamento.
+
+### Expo Location
+
+- **Objetivo:** A Expo Location ofereceu funcionalidades avançadas de localização para o aplicativo mobile.
+
+- **Recursos:**
+  - **Rastreamento Contínuo:** Capacidade de rastrear a localização em tempo real do dispositivo.
+  - **Integração com Mapas:** Facilitou a integração com mapas para exibir a localização em um contexto visual.
+
+### Expo MapView
+
+- **Objetivo:** A Expo MapView permitiu a incorporação de mapas interativos na parte mobile.
+
+- **Recursos:**
+  - **Mapas Nativos:** Utilização de mapas nativos para fornecer uma experiência de usuário familiar e intuitiva.
+  - **Personalização:** Adição de marcadores, sobreposições e outros elementos personalizados ao mapa.
+
+### Expo SecureStore
+
+- **Objetivo:** A Expo SecureStore foi empregada para garantir o armazenamento seguro de dados sensíveis no aplicativo mobile.
+
+- **Recursos:**
+  - **Segurança de Dados:** Armazenamento seguro de informações sensíveis, como tokens de acesso e identificadores.
+
+### Redux
+
+- **Objetivo:** O Redux foi adotado para gerenciar o estado da aplicação, especialmente para viagens abertas pelos usuários.
+
+- **Recursos:**
+  - **Centralização de Estado:** Utilização de um store central para armazenar e gerenciar o estado global da aplicação.
+  - **Gerenciamento de Viagens:** Armazenamento e manipulação eficiente do estado das viagens abertas pelos usuários.
+
+Essas APIs e bibliotecas desempenharam papéis cruciais no desenvolvimento tanto da parte web quanto mobile do projeto, fornecendo acesso seguro a recursos e dados essenciais, além de garantir uma gestão eficiente do estado da aplicação mobile por meio do Redux.
+
