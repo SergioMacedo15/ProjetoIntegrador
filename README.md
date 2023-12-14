@@ -303,3 +303,7 @@ meu-projeto-react-native/
 
 Essas APIs e bibliotecas desempenharam papéis cruciais no desenvolvimento tanto da parte web quanto mobile do projeto, fornecendo acesso seguro a recursos e dados essenciais, além de garantir uma gestão eficiente do estado da aplicação mobile por meio do Redux.
 
+**Link para apresentação**
+https://drive.google.com/drive/folders/1oqTGs1FoT2qiCoB0k9HFkAmWYxFT_CjX?usp=sharing
+
+
